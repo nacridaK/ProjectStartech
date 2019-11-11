@@ -1,0 +1,6 @@
+F:\YTU\VS Projeleri\Project Startech\ZedGraphKontrol\bin\Debug\ZedGraphKutuphanesi.dll
+F:\YTU\VS Projeleri\Project Startech\ZedGraphKontrol\bin\Debug\ZedGraphKutuphanesi.pdb
+F:\YTU\VS Projeleri\Project Startech\ZedGraphKontrol\obj\Debug\ZedGraphKutuphanesi.csprojAssemblyReference.cache
+F:\YTU\VS Projeleri\Project Startech\ZedGraphKontrol\obj\Debug\ZedGraphKutuphanesi.csproj.CopyComplete
+F:\YTU\VS Projeleri\Project Startech\ZedGraphKontrol\obj\Debug\ZedGraphKutuphanesi.dll
+F:\YTU\VS Projeleri\Project Startech\ZedGraphKontrol\obj\Debug\ZedGraphKutuphanesi.pdb
