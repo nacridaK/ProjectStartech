@@ -1,0 +1,43 @@
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\obj\Debug\Project Startech.csprojAssemblyReference.cache
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\obj\Debug\Project_Startech.Properties.Resources.resources
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\obj\Debug\Project Startech.csproj.GenerateResource.cache
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\Project Startech.exe.config
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\Project Startech.exe
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\Project Startech.pdb
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\RibbonLib.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\ZedGraph.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\ZedGraphKontrolu.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\RibbonLib.pdb
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\ZedGraphKontrolu.pdb
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\ZedGraph.xml
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\obj\Debug\Project_Startech.Form1.resources
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\obj\Debug\Project Startech.csproj.CopyComplete
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\obj\Debug\Project Startech.exe
+C:\Users\Fabi Kadir\Documents\Visual Studio 2019\Projects\Project Startech\Project Startech\obj\Debug\Project Startech.pdb
+F:\YTU\VS Projeleri\Project Startech\Project Startech\bin\Debug\Project Startech.exe.config
+F:\YTU\VS Projeleri\Project Startech\Project Startech\bin\Debug\Project Startech.exe
+F:\YTU\VS Projeleri\Project Startech\Project Startech\bin\Debug\Project Startech.pdb
+F:\YTU\VS Projeleri\Project Startech\Project Startech\bin\Debug\RibbonKutuphanesi.dll
+F:\YTU\VS Projeleri\Project Startech\Project Startech\bin\Debug\ZedGraphKutuphanesi.dll
+F:\YTU\VS Projeleri\Project Startech\Project Startech\bin\Debug\RibbonKutuphanesi.pdb
+F:\YTU\VS Projeleri\Project Startech\Project Startech\bin\Debug\ZedGraphKutuphanesi.pdb
+F:\YTU\VS Projeleri\Project Startech\Project Startech\obj\Debug\Project Startech.csprojAssemblyReference.cache
+F:\YTU\VS Projeleri\Project Startech\Project Startech\obj\Debug\Project_Startech.FormMain.resources
+F:\YTU\VS Projeleri\Project Startech\Project Startech\obj\Debug\Project_Startech.Properties.Resources.resources
+F:\YTU\VS Projeleri\Project Startech\Project Startech\obj\Debug\Project Startech.csproj.GenerateResource.cache
+F:\YTU\VS Projeleri\Project Startech\Project Startech\obj\Debug\Project Startech.csproj.CopyComplete
+F:\YTU\VS Projeleri\Project Startech\Project Startech\obj\Debug\Project Startech.exe
+F:\YTU\VS Projeleri\Project Startech\Project Startech\obj\Debug\Project Startech.pdb
