@@ -1,0 +1,105 @@
+﻿<RibbonGroup
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:SeriPort="clr-namespace:RibbonKutuphanesi.Ribbonlar.SeriPort.RibbonGrubu"
+             xmlns:Donusturuculer="clr-namespace:RibbonKutuphanesi.Ribbonlar.SeriPort.Donusturuculer"
+             x:Class="RibbonKutuphanesi.Ribbonlar.SeriPort.RibbonGrubu.SerialPortRibbonGroup"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Header="Seri Port Ayarları"
+             LargeImageSource="/RibbonKutuphanesi;component/Simgeler/seriport.png"
+             d:DataContext="{d:DesignInstance {x:Type SeriPort:SerialPortRibbonGroupViewModel}, IsDesignTimeCreatable=True}">
+    <RibbonGroup.Resources>
+        <Donusturuculer:BaudHiziDonusturucu x:Key="BaudHiziDonusturucu"/>
+        <Donusturuculer:PortAdiDonusturucu x:Key="PortAdiDonusturucu"/>
+    </RibbonGroup.Resources>
+    <RibbonGroup.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="Seri Port ve Veri Ayarları..." Command="{Binding Form_SeriportAcKomut}">
+                <MenuItem.Style>
+                    <Style TargetType="{x:Type MenuItem}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding PortDurumu}" Value="True">
+                                <Setter Property="IsEnabled" Value="False"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </MenuItem.Style>
+                <MenuItem.Icon>
+                    <Image Source="/RibbonKutuphanesi;component/Simgeler/ayarlar.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="Seri Port Listesini Güncelle" Command="{Binding SeriportListesiYenileKomut}">
+                <MenuItem.Icon>
+                    <Image Source="/RibbonKutuphanesi;component/Simgeler/yenile.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="Zamanı Sıfırla" Command="{Binding ZamanıSifirlaKomut}">
+                <MenuItem.Icon>
+                    <Image Source="/RibbonKutuphanesi;component/Simgeler/sifirla.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </ContextMenu>
+    </RibbonGroup.ContextMenu>
+    <RibbonComboBox IsEditable="False" Label="Port Adı:" SmallImageSource="/RibbonKutuphanesi;component/Simgeler/rs232.png">
+        <RibbonComboBox.Style>
+            <Style TargetType="{x:Type RibbonComboBox}">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding PortDurumu}" Value="True">
+                        <Setter Property="IsEnabled" Value="False"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </RibbonComboBox.Style>
+        <RibbonGallery ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectedItem="{Binding PortAdi, Converter={StaticResource PortAdiDonusturucu}}">
+            <RibbonGalleryCategory ItemsSource="{Binding SeriPortListe}"/>
+        </RibbonGallery>
+    </RibbonComboBox>
+    <RibbonTextBox Label="Baud Hızı:" SmallImageSource="/RibbonKutuphanesi;component/Simgeler/baudrate.png" Text="{Binding BaudHizi, Converter={StaticResource BaudHiziDonusturucu}}">
+        <RibbonTextBox.Style>
+            <Style TargetType="{x:Type RibbonTextBox}">
+                <Setter Property="IsEnabled" Value="True"/>
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding PortDurumu}" Value="True">
+                        <Setter Property="IsEnabled" Value="False"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </RibbonTextBox.Style>
+    </RibbonTextBox>
+    <RibbonButton Label="Arabelleği Temizle" Command="{Binding ArabellekTemizleKomut}" SmallImageSource="/RibbonKutuphanesi;component/Simgeler/temizle.png"/>
+    <RibbonButton Command="{Binding PortDurumDegistirKomut}">
+        <RibbonButton.Style>
+            <Style TargetType="{x:Type RibbonButton}">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding PortDurumu}" Value="True">
+                        <Setter Property="Label" Value="Seriport Kapat"/>
+                        <Setter Property="Background" Value="LightGreen"/>
+                        <Setter Property="PressedBackground" Value="PaleVioletRed"/>
+                        <Setter Property="LargeImageSource" Value="/RibbonKutuphanesi;component/Simgeler/port_kapat.png"/>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding GercekZaman}" Value="False">
+                        <Setter Property="Background" Value="Red"/>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding PortDurumu}" Value="False">
+                        <Setter Property="Label" Value="Seriport Aç"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="PressedBackground" Value="LightSeaGreen"/>
+                        <Setter Property="LargeImageSource" Value="/RibbonKutuphanesi;component/Simgeler/port_ac.png"/>
+                    </DataTrigger>
+                    <!--<Trigger Property="IsMouseOver" Value="True">
+                        <Trigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation Storyboard.TargetProperty="(RibbonButton.MouseOverBackground).(SolidColorBrush.Color)" To="LightGreen" Duration="0:0:0.5"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.EnterActions>
+                    </Trigger>-->
+                </Style.Triggers>
+            </Style>
+        </RibbonButton.Style>
+    </RibbonButton>
+</RibbonGroup>

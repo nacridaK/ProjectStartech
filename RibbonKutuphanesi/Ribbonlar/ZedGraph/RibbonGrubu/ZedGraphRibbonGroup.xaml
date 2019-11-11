@@ -1,0 +1,52 @@
+﻿<RibbonGroup
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ZedGraph="clr-namespace:RibbonKutuphanesi.Ribbonlar.ZedGraph.RibbonGrubu"
+             xmlns:Donusturuculer="clr-namespace:RibbonKutuphanesi.Ribbonlar.ZedGraph.Donusturuculer"
+             x:Class="RibbonKutuphanesi.Ribbonlar.ZedGraph.RibbonGrubu.ZedGraphRibbonGroup"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             LargeImageSource="/RibbonKutuphanesi;component/Simgeler/grafik.png"
+             Header="{Binding Baslik}"
+             d:DataContext="{d:DesignInstance {x:Type ZedGraph:ZedGraphRibbonGroupViewModel}, IsDesignTimeCreatable=True}">
+    <RibbonGroup.Resources>
+        <Donusturuculer:VeriTuruDonusturucu x:Key="VeriTuruDonusturucu"/>
+    </RibbonGroup.Resources>
+    <RibbonGroup.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="Ölçek Ayarları..." Command="{Binding GrafikAcKomut}">
+                <MenuItem.Icon>
+                    <Image Source="/RibbonKutuphanesi;component/Simgeler/ayarlar.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="Grafiği Temizle" Command="{Binding GrafigiTemizleKomut}">
+                <MenuItem.Icon>
+                    <Image Source="/RibbonKutuphanesi;component/Simgeler/temizle.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </ContextMenu>
+    </RibbonGroup.ContextMenu>
+    <RibbonCheckBox Label="Geçmişi İncele" SmallImageSource="/RibbonKutuphanesi;component/Simgeler/stopwatch.png" IsChecked="{Binding GecmisiIncele}"/>
+    <RibbonComboBox Label="Veri :" SmallImageSource="/RibbonKutuphanesi;component/Simgeler/ram.png">
+        <RibbonGallery ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectedItem="{Binding Tur, Converter={StaticResource VeriTuruDonusturucu}}">
+            <RibbonGalleryCategory>
+                <RibbonGalleryItem Content="Byte (1)" Tag="0"/>
+                <RibbonGalleryItem Content="Char (2)" Tag="1"/>
+                <RibbonGalleryItem Content="Double (8)" Tag="2"/>
+                <RibbonGalleryItem Content="Int16 (2)" Tag="3"/>
+                <RibbonGalleryItem Content="Int32 (4)" Tag="4"/>
+                <RibbonGalleryItem Content="Int64 (8)" Tag="5"/>
+                <RibbonGalleryItem Content="Single (4)" Tag="6"/>
+                <RibbonGalleryItem Content="UInt16 (2)" Tag="7"/>
+                <RibbonGalleryItem Content="UInt32 (4)" Tag="8"/>
+                <RibbonGalleryItem Content="UInt64 (8)" Tag="9"/>
+            </RibbonGalleryCategory>
+        </RibbonGallery>
+    </RibbonComboBox>
+    <RibbonMenuButton Label="Grafiği Kaydet" SmallImageSource="/RibbonKutuphanesi;component/Simgeler/floppy.png">
+        <RibbonMenuItem Header="TXT olarak kaydet" Command="{Binding GrafigiKaydetKomut}" CommandParameter="TXT"  ImageSource="/RibbonKutuphanesi;component/Simgeler/txt.png"/>
+        <RibbonMenuItem Header="JPG olarak kaydet" Command="{Binding GrafigiKaydetKomut}" CommandParameter="JPG" ImageSource="/RibbonKutuphanesi;component/Simgeler/jpg.png"/>
+    </RibbonMenuButton>
+</RibbonGroup>

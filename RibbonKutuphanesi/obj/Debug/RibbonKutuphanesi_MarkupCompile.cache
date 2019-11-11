@@ -1,0 +1,20 @@
+﻿RibbonKutuphanesi
+
+
+library
+C#
+.cs
+H:\YTU\VS Projeleri\Project Startech\RibbonKutuphanesi\obj\Debug\
+RibbonKutuphanesi
+none
+false
+DEBUG;TRACE
+
+31074190478
+
+291714819651
+181900101797
+Ribbonlar\RibbonControl.xaml;Ribbonlar\SeriPort\RibbonGrubu\SerialPortRibbonGroup.xaml;Ribbonlar\ZedGraph\RibbonGrubu\ZedGraphRibbonGroup.xaml;
+
+True
+
